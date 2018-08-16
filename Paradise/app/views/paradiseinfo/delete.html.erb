@@ -1,0 +1,10 @@
+<h1 style="color:blue;text-align:center;">Paradise Restaurant</h1>
+<h3>Delete Form for Food Item</h3>
+<%= form_for(:food, :url => {:action => "destroy", :id => @food.id}) do |f|%>
+<p> Are you Sure you want to delete FoodItem</p>
+<%=@food.name%>
+<div class="form_buttons">
+     <%=f.submit("Delete Food")%>
+
+</div>
+<%end%>

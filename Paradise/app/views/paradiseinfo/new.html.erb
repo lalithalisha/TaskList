@@ -1,0 +1,26 @@
+<h1 style="color:blue;text-align:center;">Paradise Restaurant</h1>
+<h3>New Form for Food Item</h3>
+<%= form_for(:food, url:{:action=>"create"}) do |f|%>
+<div class="field">
+<%=f.label :name%>
+<%=f.text_field :name%>
+</div>
+<div class="field">
+<%=f.label :price%>
+<%=f.text_field :price%>
+</div>
+<div class="field">
+<%=f.label :description%>
+<%=f.text_field :description%>
+</div>
+<div class="field">
+<%=f.label :section%>
+<%=f.text_field :section%>
+</div>
+<div class="field" >
+<%=f.label :image%>
+<%=f.file_field :image%>
+</div>
+<div class="form_buttons">
+<%=submit_tag "Create"%>
+<%end%>

@@ -1,0 +1,23 @@
+<h1 style="color:blue;text-align:center;">Paradise Restaurant</h1>
+<h3>Display Single Food Item</h3>
+<table >
+  <thead>
+    <tr>
+      <th>name</th>
+      <th>price</th>
+      <th>description</th>
+      <th>section</th>
+      <th>image</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+      <td><%=@f.name%></td>
+      <td><%=@f.price %></td>
+      <td><%=@f.description%></td>
+      <td><%=@f.section%></td>
+       <td><%=image_tag @f.image.url%></td>
+      <td><%=link_to "Back to home",({:action=>'menu'})%></td>
+      </tr>
+   </tbody>
+   </table>
